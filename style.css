@@ -1,0 +1,101 @@
+
+/* Flex CSS */
+
+
+#flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: flex-start;
+}
+#flex-item{
+    order: 0;
+    align-self:baseline;
+    flex-grow:1;
+    flex-shrink:1;
+    flex-basis: auto;
+}
+
+
+
+
+/* Normal CSS */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(34, 34, 34);
+    display:flex;
+
+}
+.flex-container{
+    width: 50%;
+    min-height:50vh;
+    right:0%;
+    background-color:#ffffff;
+    padding:20px;
+    border-radius: 10px;
+    position:absolute;
+    z-index: 1;
+}
+.flex-item{
+    margin:5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.item1{
+    background-color: red;
+    width:100px;
+    height:100px;
+    color:#fff;
+}
+.item2{
+    background-color: blue;
+    width:100px;
+    height:150px;
+}
+.item3{
+    background-color:yellow;
+    width:150px;
+    height:100px;
+}
+.item4{
+    background-color: green;
+    width:150px;
+    height:150px;
+}
+
+.editable{
+    z-index:0;
+    position:absolute;
+    width:400px;
+    background-color: rgb(50, 56, 56);
+    padding:2%;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    order:0;
+    flex-shrink:1;
+}
+pre{
+    font-size: 14px;
+}
+.container{
+    background-color: rgb(204, 175, 165);
+    padding:20px;
+    text-indent: 10px;
+}
+
+.items{
+    background-color: rgb(204, 175, 165);
+    padding:20px;
+    text-indent: 10px;
+}
+
+

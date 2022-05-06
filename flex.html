@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <!-- 
+            ////////////Flex box properties//////////////
+        
+            container =>
+
+            display:flex;   ----Most Important.
+            flex-direction: row | column | column-reverse | row-reverse;
+            flex-wrap: no-wrap | wrap |wrap-reverse;
+            justify-content: flex-start | flex-end | center | space-between |space-around | space-evenly;
+            align-items : stretch | flex-start | flex-end | center | baseline;
+            align-content : stretch | flex-start | flex-end | center | space-between;
+    
+            item =>
+            align-self: auto | stretch | flex-start | flex-end | center | baseline;
+            order: integer;
+            flex-grow: integer;
+            flex-shrink: integer;
+            flex-basis: auto (length);
+            flex: flex-grow flex-shrink flex-basis;
+        -->
+
+
+        <div class="flex-container" id ="flex-container">
+            <div class="flex-item item1" id ="flex-item">edit</div>
+            <div class="flex-item item2"></div>
+            <div class="flex-item item3"></div>
+            <div class="flex-item item4"></div>
+        </div>
+
+        <!-- Editable -->
+
+        <div class="editable">
+            <div class="container">
+<pre>
+HTML Code:
+&lt;div class="flex-container"&gt;
+    &lt;div class="flex-item"&gt;&lt;/div&gt;
+    &lt;div class="flex-item"&gt;&lt;/div&gt;
+    &lt;div class="flex-item"&gt;&lt;/div&gt;
+    &lt;div class="flex-item"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+CSS Code:
+</pre>
+<pre>.flex-container{
+display:flex;<br></pre>
+                <label for="direction">flex-direction:</label>
+                <select id="direction">
+                <option value="row">row;</option>
+                <option value="column">column;</option>
+                <option value="column-reverse">column-reverse;</option>
+                <option value="row-reverse">row-reverse;</option>
+                </select>
+                <br>
+                
+                <label for="wrap">flex-wrap:</label>
+
+                <select id="wrap">
+                <option value="no-wrap">no-wrap</option>
+                <option value="wrap">wrap</option>
+                <option value="wrap-reverse">wrap-reverse</option>
+                </select>
+                <br>
+
+                <label for="jcontent">justify-content:</label>
+
+                <select id="jcontent">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end;</option>
+                <option value="center">center;</option>
+                <option value="space-between">space-between;</option>
+                <option value="space-around">space-around;</option>
+                <option value="space-evenly">space-evenly;</option>
+                </select>
+                <br>
+
+                <label for="aitems">align-items:</label>
+
+                <select id="aitems">
+                <option value="stretch">stretch;</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end;</option>
+                <option value="center">center;</option>
+                <option value="baseline">baseline;</option>
+                </select>
+                <br>
+
+                <label for="acontent">align-content:</label>
+
+                <select id="acontent">
+                <option value="stretch">stretch;</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end;</option>
+                <option value="center">center;</option>
+                <option value="space-between">space-between;</option>
+                <option value="space-around">space-around;</option>
+                </select>
+                <br>
+                <p> <br>} <br></p>
+            </div>
+            <div class="items">
+                    <p>.flex-item{<br></p>
+                <label for="aself">align-self:</label>
+                <select id="aself">
+                    <option value="auto">auto;</option>
+                    <option value="stretch">stretch;</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end;</option>
+                    <option value="center">center;</option>
+                    <option value="baseline">baseline;</option>
+                    </select>
+                    
+                <br>
+                    <label for="order">order:</label>
+                    <select id="order">
+                        <option value="0">0;</option>
+                        <option value="1">1;</option>
+                        <option value="2">2;</option>
+                        <option value="3">3;</option>
+                        </select>
+                        <br>
+                    
+                    <label for="grow">flex-grow:</label>
+                    <select id="grow">
+                        <option value="0">0;</option>
+                        <option value="1">1;</option>
+                        </select>
+                        <br>
+
+                    <label for="shrink">flex-shrink:</label>
+                    <select id="shrink">
+                        <option value="0">0;</option>
+                        <option value="1">1;</option>
+                        </select>
+                        <br>
+
+                    <label for="basis">flex-basis:</label>
+                    <select id="shrink">
+                        <option value="auto">auto;</option>
+                        <option value="content">content;</option>
+                        <option value="0%">0%;</option>
+                        </select>
+                        <p><br>} <br></p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+        
+</body>
+</html>
